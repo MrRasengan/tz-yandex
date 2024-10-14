@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shelf {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.product {
+  cursor: grab;
+}
+
+.product1{
+  position: absolute;
+  top: 85px;
+  left: 20px;
+}
+
+.product2{
+  position: absolute;
+  top: 80px;
+  left: 75px;
+}
+
+.product3{
+  position: absolute;
+  top: 80px;
+  left: 130px;
+}
+
+.product4{
+  position: absolute;
+  top: 170px;
+  left: 10px;
+}
+
+.product5{
+  position: absolute;
+  top: 170px;
+  left: 80px;
+}
+
+.product6{
+  position: absolute;
+  top: 170px;
+  left: 140px;
+}
+
+.product7{
+  position: absolute;
+  top: 280px;
+  left: 25px;
+}
+
+.product8{
+  position: absolute;
+  top: 240px;
+  left: 60px;
+}
+
+.product9{
+  position: absolute;
+  top: 240px;
+  left: 150px;
+}
+
+.cart {
+  text-align: center;
+  position: absolute;
+  top: 340px;
+left: -35px;
+z-index: 2;
+}
+
+
+.cart-items {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  z-index: -1;
+}
+
+.button{
+  position: absolute;
+  width: 174px;
+height: 56px;
+  border-radius: 16px;
+/* Theme/Default/Day/Control */
+background: rgb(252, 224, 0);
+top: 510px;
+left: 30px;
+z-index: 3;
+cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .banner {
+      flex-direction: column;
+      align-items: stretch;
+  }
+}
+
+@keyframes highlight {
+  0% { background-color: #fff; }
+  50% { background-color: #ff0; }
+  100% { background-color: #fff; }
+}
+
+.animate {
+  animation: highlight 1s infinite;
+}
